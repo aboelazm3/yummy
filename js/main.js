@@ -59,6 +59,11 @@ document.querySelector(".open").classList.remove("d-none");
 //
 document.querySelector('.loading-info').classList.remove('d-none')
 
+
+document.querySelector(".rowSearch").innerHTML  = "";
+document.querySelector("header .contact").innerHTML  = "";
+
+
   let res = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${itemId}`
   );
@@ -139,6 +144,9 @@ flag = true;
 document.querySelector(".close").classList.add("d-none");
 document.querySelector(".open").classList.remove("d-none");
 //
+
+document.querySelector("header .contact").innerHTML  = "";
+document.querySelector(".rowSearch").innerHTML  = "";
 document.querySelector('.loading-info').classList.remove('d-none')
 
 let res = await fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
@@ -180,6 +188,9 @@ flag = true;
 document.querySelector(".close").classList.add("d-none");
 document.querySelector(".open").classList.remove("d-none");
 //
+
+document.querySelector("header .contact").innerHTML  = "";
+document.querySelector(".rowSearch").innerHTML  = "";
 document.querySelector('.loading-info').classList.remove('d-none')
     let res  = await fetch('https://www.themealdb.com/api/json/v1/1/list.php?a=list')
     let data = await res.json()
@@ -212,6 +223,11 @@ flag = true;
 document.querySelector(".close").classList.add("d-none");
 document.querySelector(".open").classList.remove("d-none");
 //
+
+
+document.querySelector("header .contact").innerHTML  = "";
+document.querySelector(".rowSearch").innerHTML  = "";
+
 document.querySelector('.loading-info').classList.remove('d-none')
 
     let res = await fetch('https://www.themealdb.com/api/json/v1/1/list.php?i=list')
@@ -450,6 +466,11 @@ function displayContact() {
   document.querySelector(".open").classList.remove("d-none");
   //
   
+
+  document.querySelector(".rowSearch").innerHTML  = "";
+  document.querySelector(".kolo").innerHTML  = "";
+
+
     document.querySelector("header .contact").innerHTML = `
 
       <div class="container vh-100 d-flex justify-content-center align-items-center flex-column ">
