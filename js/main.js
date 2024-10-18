@@ -117,6 +117,7 @@ flag = true;
 document.querySelector(".close").classList.add("d-none");
 document.querySelector(".open").classList.remove("d-none");
 //
+document.querySelector("header .contact").innerHTML  = "";
 
   document.querySelector(".row").innerHTML = `
      <div class="col-md-6">
@@ -449,7 +450,7 @@ function displayContact() {
   document.querySelector(".open").classList.remove("d-none");
   //
   
-    document.querySelector("header").innerHTML = `
+    document.querySelector("header .contact").innerHTML = `
 
       <div class="container vh-100 d-flex justify-content-center align-items-center flex-column ">
         <div class="row g-4">
